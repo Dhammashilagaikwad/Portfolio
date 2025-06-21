@@ -91,6 +91,17 @@
   transform: scale(1.05);
 }
 
+  .svg-curve{
+    fill: none;
+    width: 100%;
+    display: block;
+}
+
+
+.svg-curve path {
+    fill: rgb(10, 0, 27);
+}
+
 /* =================== SECTION: Headings =================== */
 .headings {
   font-size: 50px;
@@ -319,15 +330,5 @@ textarea.inputs {
     padding-left: 0;
   }
 
-  .svg-curve{
-    fill: none;
-    width: 100%;
-    display: block;
-}
-
-
-.svg-curve path {
-    fill: rgb(10, 0, 27);
-}
 
 }
