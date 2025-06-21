@@ -1,0 +1,333 @@
+/* =================== FONTS =================== */
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* =================== ROOT VARIABLES =================== */
+:root {
+  --color-bg-dark: #0d0d0d;
+  --color-primary: #ff6ec4;
+  --color-secondary: #7873f5;
+  --color-gradient: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  --color-gradient-reverse: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+  --color-white: #fff;
+  --color-muted: #6c757d;
+  --color-accent: #007bff;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =================== GLOBAL RESET =================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+/* =================== SECTION: Hero =================== */
+.con-1 {
+  height: 600px;
+  background-color: black;
+}
+
+.para-div {
+  padding: 100px 0 20px 50px;
+  margin-top: 50px;
+  color: var(--color-white);
+}
+
+.para-div h1 {
+  padding-bottom: 20px;
+}
+
+.para-div p {
+  font-size: 20px;
+}
+
+.name,
+.role {
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+.img-1 {
+  mask-image: radial-gradient(circle, black 50%, transparent 66%);
+  padding-top: 50px;
+  background-size: cover;
+}
+
+/* =================== SECTION: Buttons =================== */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.btn-1,
+.btn-2 {
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: var(--color-gradient);
+  color: var(--color-white);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-1:hover,
+.btn-2:hover {
+  background: var(--color-gradient-reverse);
+  color: black;
+  transform: scale(1.05);
+}
+
+/* =================== SECTION: Headings =================== */
+.headings {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =================== SECTION: About =================== */
+.con-2 {
+  padding: 60px 20px;
+}
+
+.my-self {
+  padding-top: 25px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  padding-right: 20px;
+}
+
+.academics {
+  padding-top: 30px;
+}
+
+.education {
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-left: 4px solid var(--color-accent);
+}
+
+.education h5 {
+  font-size: 1rem;
+  color: var(--color-accent);
+  margin-bottom: 5px;
+}
+
+.education h6 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.acheivement p {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.acheivement p::before {
+  content: "🏆";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* =================== SECTION: Skills =================== */
+.skills-grid-section {
+  background: var(--color-bg-dark);
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px 10px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 15px rgba(186, 100, 245, 0.4);
+}
+
+.skill-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 4px);
+}
+
+.skill-card span {
+  display: block;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =================== SECTION: Projects =================== */
+.con-3 {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.con-3 p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: var(--color-muted);
+}
+
+.projects {
+  row-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f7;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* =================== SECTION: Contact Form =================== */
+.form-section {
+  padding-top: 60px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.form-section h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.form-section p {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.inputs,
+textarea.inputs {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  font-weight: 100 !important;
+  font-size: 13px;
+  outline: none;
+  resize: none;
+}
+
+.input:focus {
+  box-shadow: none !important;
+}
+
+/* =================== SECTION: Footer =================== */
+.footer {
+  height: 200px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.copywrite {
+  text-align: center;
+  font-size: 15px;
+}
+
+@keyframes rotate {
+  0% { transform: rotateY(0deg); }
+  25% { transform: rotateY(90deg); }
+  50% { transform: rotateY(180deg); }
+  75% { transform: rotateY(270deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+
+
+/* =================== MEDIA QUERIES =================== */
+@media screen and (max-width: 600px) {
+  .para-div {
+    padding: 10px;
+    margin-top: 10px;
+    order: 2;
+  }
+
+  .con-1 {
+    height: auto;
+  }
+
+  .img-class {
+    order: 1;
+  }
+
+  .my-self {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  .academics {
+    padding-left: 0;
+  }
+
+  .svg-curve{
+    fill: none;
+    width: 100%;
+    display: block;
+}
+
+
+.svg-curve path {
+    fill: rgb(10, 0, 27);
+}
+
+}
