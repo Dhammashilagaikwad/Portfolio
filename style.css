@@ -119,6 +119,10 @@
     fill: none;
     width: 100%;
     display: block;
+    height: auto;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
 }
 
 
@@ -167,21 +171,30 @@
   transform: translateY(-5px);
 }
 
-.tab-btn{
-  background: var(--color-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
- font-weight: 700;
-  font-size: 1rem;
-  border: none;
+/* Tab Buttons - Pill Style */
+.tab-btn {
+  font-weight: 500;
+  padding: 10px 20px;
   margin-right: 10px;
-  cursor: pointer;
-  
+  border-radius: 30px;
+  background: rgba(255, 110, 196, 0.1);
+  color: var(--color-gradient);
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(255, 110, 196, 0.1);
 }
 
-.tab-btn:hover,
+.tab-btn:hover {
+  background: var(--color-gradient-reverse);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Active tab style */
 .tab-btn.active {
-  transform: scale(1.08);
+  background: linear-gradient(45deg, #fc67fa, #f4c4f3);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(252, 103, 250, 0.3);
 }
 
 
@@ -296,6 +309,7 @@ font-weight: 600;
   padding: 70px 20px;
   text-align: center;
   color: var(--color-white);
+  cursor: pointer;
 }
 
 .skills-grid {
@@ -457,10 +471,10 @@ height: 100%;
 }
 
 .project-img {
-  max-height: 400px;
+  max-height: 360px;
   width: auto;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 40px;
   box-shadow: 0 10px 20px rgba(100, 100, 250, 0.3);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -491,9 +505,9 @@ height: 100%;
 }
 /* =================== SECTION: Contact Form =================== */
 .form-section {
-  padding-top: 60px;
-  width: 70%;
-  margin: auto;
+  padding-top: 40px;
+  width: 90%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -522,15 +536,97 @@ textarea.inputs {
   box-shadow: none !important;
 }
 
+.contact-info {
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+}
+
+
+.contact-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: var(--color-bg-dark);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-info i {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  min-width: 24px;
+}
+
+.contact-info span {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-muted);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  background: rgba(255, 110, 196, 0.1);
+  padding: 15px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(186, 100, 245, 0.2);
+}
+
+.social-icons a:hover {
+  background: var(--color-gradient);
+  color: white;
+  transform: scale(1.1);
+}
+
+
 /* =================== SECTION: Footer =================== */
 .footer {
+  margin-top: -1px; 
+  padding-top: 0;
   height: 200px;
   background-color: black;
-  color: white;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   padding-bottom: 20px;
+}
+.footer .nav-link {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.footer .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 0%;
+  background: var(--color-gradient);
+  transition: width 0.3s ease;
+}
+
+.footer .nav-link:hover::after {
+  width: 100%;
+}
+
+.footer .nav-link:hover {
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.05);
 }
 
 .copywrite {
@@ -538,13 +634,8 @@ textarea.inputs {
   font-size: 15px;
 }
 
-@keyframes rotate {
-  0% { transform: rotateY(0deg); }
-  25% { transform: rotateY(90deg); }
-  50% { transform: rotateY(180deg); }
-  75% { transform: rotateY(270deg); }
-  100% { transform: rotateY(360deg); }
-}
+
+
 
 
 .bottom-navbar {
@@ -588,10 +679,19 @@ display: flex;
 
 .bottom-navbar ul li a:hover,
 .bottom-navbar ul li a.active {
-  background-color: var(--color-secondary);
+  background: var(--color-gradient);
   color: var(--color-bg-dark);
 }
 
+.svg-curve path {
+  stroke: none;
+}
+
+.bottom-curve {
+  margin: 0;
+  padding: 0;
+  line-height: 0; /* Important for removing space below inline SVG */
+}
 
 
 /* =================== MEDIA QUERIES =================== */
@@ -618,6 +718,13 @@ display: flex;
   line-height: 1.6;
 }
 
+.con-2 {
+ padding-bottom: 50px;
+}
+
+.works{
+  padding-top: 30px !important;
+}
   .project-image img {
     max-width: 90%;
   }
@@ -668,7 +775,20 @@ order: 2;
 .edu-details p{
   display: none;
 }
-  
+
+.contact-info{
+  order: 2;
+  padding-top: 20px;
+}
+  .social-icons  {
+ margin-top: 0;
+ padding-top: 0;
+ margin-bottom: 30px;
+ 
+  gap: 15px;
+  padding-top: 3px;
+
+}
 }
 
 
