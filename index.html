@@ -25,29 +25,52 @@
     <link rel="stylesheet" href="css/animate.css">
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <!-- first container start -->
-    <div class="container-fluid con-1" id="home">
+    <div class="container-fluid con-1 " id="home">
         <div class="row">
-            <div class="col-md-7 col-12 para-div">
-                <h1> Hi I'm <span class="name">Dhammashila Gaikwad. </span></h1>
+            <div class="col-md-7 col-12 para-div ">
+                <h1> Dhammashila Gaikwad. </h1>
                 <h3> I'm a <span class="role"></span></h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum minima libero deserunt
-                    recusandae sint autem, vel corporis necessitatibus! Dolor quasi inventore rem repellendus nam
-                    exercitationem voluptatem animi, natus aperiam ad.
+                <p class="pt-4">
+                  I’m a Full Stack Developer who loves creating clean, functional, and engaging web applications that deliver real value. With a passion for turning ideas into seamless digital experiences, I enjoy building responsive, user-friendly interfaces and robust back-end systems.
                 </p>
+                <div class="btn-group wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <a href="cv.pdf" download>
+                        <button class="btn-2">Download CV <i class="fas fa-download"></i></button>
+                    </a>
 
-                <p>
-                <div class="btn-group wow animate__animated  animate__backInLeft" data-wow-delay="0.2s">
-                    <a href="cv.pdf" download> <button class="btn-1">Download CV</button> </a>
-                    <button class="btn-2">Contact</button>
+                    <button class="btn-1 network-button">
+                        <span class="default-text">Let's network&nbsp;<i class="fas fa-user-friends"></i></span>
+                        <span class="hover-icons">
+                            <a href="https://www.linkedin.com/in/dhammashila-gaikwad-20250324a/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/?next=%2F" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </span>
+                    </button>
                 </div>
-                </p>
             </div>
-            <div class="col-md-5 col-12 img-class wow animate__animated animate__fadeInRight">
+            <div class="col-md-5 col-12 img-class ">
+                <!-- <div class="menu">
+                    <ul class="nav justify-content-center mt-4  ">
+                        <li class="nav-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s"><a
+                                href="#home" class="nav-link px-2 text-white">Home</a></li>
+                        <li class="nav-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s"><a
+                                href="#about-me" class="nav-link px-2 text-white">Aboute Me</a></li>
+                        <li class="nav-item "><a href="#skills" class="nav-link px-2 text-white">Skills</a></li>
+                        <li class="nav-item wow animate__animated animate__fadeInRight" data-wow-delay="0.3s"><a
+                                href="#projects" class="nav-link px-2 text-white">Projects</a></li>
+                        <li class="nav-item wow animate__animated animate__fadeInRight" data-wow-delay="0.3s"><a
+                                href="#contact" class="nav-link px-2 text-white">Contact</a></li>
+                    </ul>
+                </div> -->
+
+
                 <img width="500" height="500" src="./images/1st bg img.avif" alt="picture" class="img-fluid img-1 ">
             </div>
         </div>
@@ -61,183 +84,673 @@
 
     <!-- first container end -->
 
-
     <!-- education and Acheivement start -->
-    <div class="container-fluid con-2" id="about-me">
-        <h1 class="headings wow animate__animated animate__heartBeat text-center">About Me</h1>
-        <div class="row align-items-center ">
+    <section class="about-me-section py-5" id="about-me">
+        <div class="container">
+            <h1 class="headings text-center mb-5 wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">About
+                Me</h1>
+            <div class="row main">
 
-            <!-- Text Content -->
-            <div class="col-md-7 col-12 pt-4">
-                <div class="academics wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
-                    <p>
-                        I’m a passionate IT graduate skilled in full-stack development, frontend and backend
-                        development, and database management. Strong foundation in HTML, CSS, JavaScript, and React.js,
-                        driven by curiosity and a love for building elegant solutions.
+                <div class="col-md-5 text-center  mb-md-0 ">
+                    <div class="me-img-wrapper">
+                        <img src="./images/me.jpg" alt="Dhammashila Gaikwad" class="img-fluid  me-img " />
+                    </div>
+                    <h5 class="mt-3 fw-bold">Dhammashila Gaikwad</h5>
+                    <p class="role-title">Full Stack Developer</p>
+                </div>
+
+
+                <div class="col-md-7  me-edu wow animate__animated animate__fadeInRight">
+                    <p class="lead">
+                        Hello! I'm <strong class="lead1">Dhammashila Gaikwad</strong>, a passionate full stack developer with a strong foundation in building responsive, intuitive web experiences.  I’m always ready to learn and grow in a dynamic team environment.
                     </p>
 
-                    <!-- Tabs -->
-                    <nav>
-                        <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
-                            <button class="nav-link tab-btn border-0 active" id="nav-home-tab" data-bs-toggle="tab"
-                                data-bs-target="#nav-home" type="button" role="tab">🎓 Education</button>
-                            <button class="nav-link tab-btn border-0" id="nav-profile-tab" data-bs-toggle="tab"
-                                data-bs-target="#nav-profile" type="button" role="tab">🏅 Achievements</button>
-                        </div>
-                    </nav>
-
-                    <!-- Tab Content -->
-                    <div class="tab-content mt-4" id="nav-tabContent">
-                        <!-- Education -->
-                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel">
-                            <div class="education-timeline">
-                                <div class="edu-card">
-                                    <div class="edu-year">2024</div>
-                                    <div class="edu-details">
-                                        <h6>🎓 MSc.IT - 1st Rank</h6>
-                                        <p class="edu-sub">Completed with in-depth research work.</p>
+                    <div class="about-card w-75 about-cards mt-4">
+                        <div>
+                            <p class="d-inline-flex gap-4 ms-3">
+                                <a class="btn text-white " data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                                    aria-expanded="false" aria-controls="multiCollapseExample1">Education</a>
+                                <button class="btn text-white " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                                    aria-controls="multiCollapseExample2">Achievements</button>
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-6 p-0">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                        <div class="card card-body">
+                                            <h5 class="card-title"><i
+                                                    class="fas fa-graduation-cap me-2 text-primary"></i> Education
+                                            </h5>
+                                            <p class="card-text">🎓 MSc.IT (2022 - 2024)</p>
+                                            <p class="card-text">🎓 BSc.IT (2019 - 2022)</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="edu-card">
-                                    <div class="edu-year">2022</div>
-                                    <div class="edu-details">
-                                        <h6>🎓 BSc.IT</h6>
-                                        <p class="edu-sub">Strong foundation in Information Technology.</p>
+                                <div class="col-sm-6 p-0">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                        <div class="card card-body">
+                                            <h5 class="card-title"><i class="fas fa-trophy  text-warning"></i>
+                                                Achievements</h5>
+                                            <ul class="mb-0  ">
+                                                <li>🏆 Runner-up at Super Coders League 2024</li>
+                                                <li>🏆 1st Rank in Msc.IT</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Achievements -->
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel">
-                            <ul class="achievement-list">
-                                <li>
-                                    <div class="achievement-card">
-                                        <span class="icon">💡</span>
-                                        <div class="text">
-                                            <strong>DineAtHome Project:</strong> 1st Runner-up at <em>The Super Coders
-                                                League</em> for creativity and innovation.
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="achievement-card">
-                                        <span class="icon">🏆</span>
-                                        <div class="text">
-                                            <strong>MSc.IT:</strong> Secured 1st Rank in MSc.IT
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+
+                    </div>
+
+
+                    <!-- <div class="col-md-6 wow animate__animated animate__fadeInRight">
+                    <p class="lead">
+                        Hello! I'm <strong>Dhammashila Gaikwad</strong>, a passionate developer focused on building
+                        responsive,
+                        intuitive web experiences. I love turning ideas into real, usable interfaces.
+                    </p>
+
+                    <div class="about-cards mt-4">
+                        <div class="card mb-3 about-card ">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-graduation-cap me-2 text-primary"></i> Education
+                                </h5>
+                                <p class="card-text">🎓 MSc.IT (2022 - 2024)</p>
+                                <p class="card-text">🎓 BSc.IT (2019 - 2022)</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 about-card ">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-trophy me-2 text-warning"></i> Achievements</h5>
+                                <ul class="mb-0 ps-3 ">
+                                    <li>🏆 Runner-up at Super Coders League 2024</li>
+                                    <li>🏆 1st Rank in Msc.IT</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- education and Acheivement end -->
+
+
+    <!-- new skills section -->
+
+    <div class="container skills-tools py-4 px-4" id="skills">
+        <h3 class="headings wow animate__animated animate__fadeInDown text-center mb-5" data-wow-delay="0.2s">
+            Skills & Tools
+        </h3>
+
+        <div class="row justify-content-evenly gy-4 skills-row">
+            <!-- Skills -->
+            <div class="col-md-6 col-12 wow animate__animated animate__fadeInUp animate__slow" data-wow-delay="0.2s">
+                <div class="skills-box text-center p-4 ">
+                    <h4 class="mb-3 fw-bold"> Skills</h4>
+                    <div class="text-start">
+                        <div class="mb-3">
+                            <strong><i class="fas fa-code me-2  text-primary fs-4"></i>HTML5</strong>
+                            <div class="progress mt-1">
+                                <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
+                                    style="width: 85%">85%</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong><i class="fab fa-css3-alt me-2  text-info fs-4"></i>CSS3</strong>
+                            <div class="progress mt-1">
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                                    style="width: 80%">80%</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong><i class="fab fa-js me-2 text-warning fs-4"></i>JavaScript</strong>
+                            <div class="progress mt-1">
+                                <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated text-dark"
+                                    style="width: 75%">75%</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong><i class="fab fa-bootstrap me-2  text-purple fs-4"></i>Bootstrap</strong>
+                            <div class="progress mt-1">
+                                <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated"
+                                    style="width: 70%">70%</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong><i class="fas fa-exchange-alt me-2  text-success fs-4"></i>Ajax & JSON</strong>
+                            <div class="progress mt-1">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                    style="width: 65%">65%</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <strong><i class="fa-brands fa-react text-primary"></i>React.js</strong>
+                            <div class="progress mt-1">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated "
+                                    style="width: 60%">60%</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Profile Image -->
-            <div class="col-md-5 col-12 text-center mt-4 mt-lg-0">
-                <div class="myself wow animate__animated animate__fadeInTopRight" data-wow-delay="0.3s">
-                    <img src="./images/me.jpg" class="me-img" alt="Me">
-                    <h5 class="mt-3">Dhammashila Gaikwad</h5>
-                    <p class="role-title">Full Stack Developer</p>
+            <!-- Tools -->
+            <div class="col-md-6 col-12">
+                <div class="tools-box text-center p-4 ">
+                    <h4 class="mb-4 fw-bold"> Tools</h4>
+
+
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="circle" style="--percent: 80">
+                                <div class="number">80%</div>
+                            </div>
+                            <strong>
+                                <p>Postman</p>
+                            </strong>
+                        </div>
+
+                        <div class="skill wow animate__animated  animate__fadeInRight animate__slow"
+                            data-wow-delay="0.3s">
+                            <div class="circle circle1" style="--percent: 70">
+                                <div class="number">70%</div>
+                            </div>
+                            <strong>
+                                <p>Github & Gitlab</p>
+                            </strong>
+                        </div>
+
+                        <div class="skill wow animate__animated  animate__fadeInRight animate__slow"
+                            data-wow-delay="0.5s">
+                            <div class="circle circle2" style="--percent: 50">
+                                <div class="number">50%</div>
+                            </div>
+                            <strong>
+                                <p>PgAdmin</p>
+                            </strong>
+                        </div>
+
+                        <div class="skill wow animate__animated  animate__fadeInRight animate__slow">
+                            <div class="circle" style="--percent: 50">
+                                <div class="number">50%</div>
+                            </div>
+                            <strong>
+                                <p>AWS</p>
+                            </strong>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- <ul class="list-unstyled text-start ps-3">
+                        <li class="mb-2"><i class="fab fa-git-alt me-2 text-danger fs-4"></i><strong> Git &
+                                GitHub</strong> </li>
+                        <li class="mb-2"><i class="fas fa-cloud me-2 text-orange fs-4"></i> <strong> Postman</strong>
+                        </li>
+                        <li class="mb-2"><i class="fa-solid fa-database me-2 text-black fs-4"></i> <strong>
+                                pgAmin</strong></li>
+                        <li class="mb-2"><i class="fa-brands fa-gitlab me-2 text-purple fs-4"></i> <strong> GitLab &
+                                GitHub Desktop</strong></li>
+                    </ul> -->
+
                 </div>
             </div>
-
         </div>
+
     </div>
 
-
-
-
-
-    <!-- education and Acheivement end -->
-
-    <!--  skills section start -->
-    <div class="container-fluid skills-grid-section " id="skills">
-        <h3 class="headings wow animate__animated animate__heartBeat" data-wow-delay="0.3s">Skills & Tools</h3>
-        <div class="skills-grid wow animate__animated animate__flipInY">
-
-            <div class="skill-card">
-                <img src="/images/html.png" alt="HTML5" />
-                <span>HTML5</span>
-            </div>
-            <div class="skill-card">
-                <img src="/images/css.webp" alt="CSS3" />
-                <span>CSS3</span>
-            </div>
-            <div class="skill-card">
-                <img src="/images/bootstrap.png" alt="Bootstrap" />
-                <span>Bootstrap</span>
-            </div>
-            <div class="skill-card">
-                <img src="/images/js.webp" alt="JavaScript" />
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-card">
-                <img src="/images/json-6.png" alt="AJAX & JSON" />
-                <span>AJAX & JSON</span>
-            </div>
-            <div class="skill-card">
-                <img src="/images/jquery.png" alt="jQuery" />
-                <span>jQuery</span>
-            </div>
-            <div class="skill-card">
-                <img src="/images/postman.png" alt="Postman" />
-                <span>Postman</span>
-            </div>
-            <div class="skill-card">
-                <img src="/images/git.png" alt="GitHub" />
-                <span>GitHub</span>
-            </div>
-            <div class="skill-card">
-                <img src="/images/gitlab.png" alt="GitLab" />
-                <span>GitLab</span>
-            </div>
-            <div class="skill-card">
-                <img src="/images/gitDesktop.png" alt="GitHub Desktop" />
-                <span>GitHub Desktop</span>
-            </div>
-            <div class="skill-card">
-                <img src="/images/pgadmin.png" alt="PgAdmin" />
-                <span>PgAdmin</span>
-            </div>
-        </div>
-    </div>
-
-    <!--  skills section end -->
-
+    <!-- new skills section start -->
 
 
     <!-- projects works start -->
 
-    <div class="container  project-details" id="projects">
-        <h3 class="headings wow animate__animated animate__heartBeat text-center">My Work</h3>
-        <div class="row works">
+    <div class="container mt-5 mb-5" id="projects">
+        <h3 class="headings wow animate__animated animate__fadeInDown text-center mb-5" data-wow-delay="0.2s">
+            My Work
+        </h3>
 
-            <div class="col-md-6 col-12 projects wow animate__animated animate__fadeInLeft">
-                <div class="project-info ">
+        <nav class="projects-nav">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">All</button>
+                <button class="nav-link " id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">HTML & CSS</button>
+                <button class="nav-link " id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">JavaScript</button>
+                <button class="nav-link" id="nav-react-tab" data-bs-toggle="tab" data-bs-target="#nav-react"
+                    type="button" role="tab" aria-controls="nav-react" aria-selected="false">React.js</button>
+            </div>
+        </nav>
 
-                    <div id="project-content">
-                        <!-- Content will be populated dynamically -->
+
+        <!-- All -->
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                tabindex="0">
+                <div class="row ">
+                    <div class="col-md-4 col-6  project overflow-hidden">
+                        <img src="./images/sms_js.png" class="img-fluid border border-danger ">
+                        <div class="layer">
+                            <h3> SMS Portal</h3>
+                            <p>A fully functional SMS management portal built using HTML, CSS (Bootstrap), and pure
+                                JavaScript with an object-oriented, class-based structure.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-sms-portal.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/SMSPortal" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-md-4 col-6 project overflow-hidden wow animate__animated animate__fadeInLeft"
+                        data-wow-delay="0.2s">
+                        <img src="./images/wexim.png" class="img-fluid border border-danger ">
+                        <div class="layer">
+                            <h3> Wexim Clone </h3>
+                            <p> Built from scratch to mirror every section, animation and interaction of the Wexim
+                                template.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://delightful-meringue-322fc3.netlify.app/" target="_blank"
+                                    class="me-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://delightful-meringue-322fc3.netlify.app/" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 project overflow-hidden">
+                        <img src="./images/to-do-list.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3>To-Do-List</h3>
+                            <p>users can quickly add tasks, mark them complete with a single click (line‑through), and
+                                delete items. Built with pure HTML, CSS, and JavaScript for a smooth, responsive
+                                experience.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-to-do-list.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/To-Do-List" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 col-6 project overflow-hidden">
+                        <img src="./images/react-moviedb.png" class="img-fluid border border-danger ">
+                        <div class="layer">
+                            <h3> MovieDB </h3>
+                            <p>Built with React.js, Discover movies, casts, and ratings easily.
+                                Browse separate pages for Popular, Upcoming, and Top‑Rated
+                                films pulled live from TMDB.Client‑side search lets you find any movie from any page in
+                                real time.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-react-moviedb.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/ReactMovieDb" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-6  project overflow-hidden wow animate__animated animate__fadeInUp"
+                        data-wow-delay="0.8s">
+                        <img src="./images/parallax.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3>Parallax </h3>
+                            <p>A visually engaging website built using HTML and CSS, replicating the parallax scrolling
+                                effect to create depth and motion.
+                            </p>
+                            <div class="d-flex">
+                                <a href="https://parallax-dhamm.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/parallax" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-6  project overflow-hidden ">
+                        <img src="./images/home-loan.png" class="img-fluid border border-danger ">
+                        <div class="layer">
+                            <h3>Home Loan Calculator</h3>
+                            <p>A responsive web app built with HTML, CSS, and JavaScript that calculates EMI, total
+                                interest, and total payable amount based on user input. It also features an interactive
+                                column chart (using Highcharts) to visually represent the loan breakdown.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-home-loan.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/Dhamm-HomeLoan" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-6  project overflow-hidden ">
+                        <img src="./images/stock.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3>🔢 Stock Average Calculator</h3>
+                            <p>A clean JavaScript tool to calculate average stock price, total units, and total
+                                investment based on user inputs.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-stockaveragecalculator.netlify.app/" target="_blank"
+                                    class="me-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/stock-calculator" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-6  project overflow-hidden ">
+                        <img src="./images/ppf.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3>🔢 PPF Calculator</h3>
+                            <p>This PPF calculator simulates how an annual investment grows over time with compound
+                                interest.JavaScript PPF calculator showing yearly opening balance, investment, interest,
+                                and closing balance.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-ppf-calculator.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/PPFCalculator" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-6  project overflow-hidden ">
+                        <img src="./images/temp.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3> Temperature Converter</h3>
+                            <p>A responsive temperature converter built with HTML, CSS, and JavaScript. It converts
+                                Celsius to Fahrenheit and displays the result instantly with a clean UI
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://temperature-to-fahrenheit.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/Temperature-Fahrenheitr"
+                                    target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-6  project overflow-hidden ">
+                        <img src="./images/discount.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3>Discount Calculator r</h3>
+                            <p>responsive discount calculator built with HTML, CSS, and JavaScript. It calculates the
+                                discount amount and final price based on user input, with clean UI and real-time
+                                results.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-discount-calculator.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/DiscountCalculator" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
 
 
-            <div class="col-md-6  responsive-none text-center wow animate__animated  animate__fadeInRight">
-                <img id="project-image" src="" alt="Project Image" class=" rounded project-img" />
+            <!-- html&css -->
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div class="row ">
+                    <div class="col-md-4 col-6 project overflow-hidden">
+                        <img src="./images/wexim.png" class="img-fluid border border-danger ">
+                        <div class="layer">
+                            <h3>Wexim Clone </h3>
+                            <p>Built from scratch to mirror every section, animation and interaction of the Wexim
+                                template.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://delightful-meringue-322fc3.netlify.app/" target="_blank"
+                                    class="me-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/wexim_website" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6  project overflow-hidden">
+                        <img src="./images/parallax.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3>Parallax </h3>
+                            <p>A visually engaging website built using HTML and CSS, replicating the parallax scrolling
+                                effect to create depth and motion.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://parallax-dhamm.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/parallax" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- js -->
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                <div class="row ">
+                    <div class="col-md-4 col-6 project overflow-hidden">
+                        <img src="./images/sms_js.png" class="img-fluid border border-danger ">
+                        <div class="layer">
+                            <h3> SMS Portal</h3>
+                            <p>A fully functional SMS management portal built using HTML, CSS (Bootstrap), and pure
+                                JavaScript with an object-oriented, class-based structure.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-sms-portal.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/SMSPortal" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-6 project overflow-hidden">
+                        <img src="./images/to-do-list.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3>To-Do-List</h3>
+                            <p>users can quickly add tasks, mark them complete with a single click (line‑through), and
+                                delete items. Built with pure HTML, CSS, and JavaScript for a smooth, responsive
+                                experience.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-to-do-list.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/To-Do-List" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-6  project overflow-hidden ">
+                        <img src="./images/home-loan.png" class=" img-fluid border border-danger ">
+                        <div class="layer">
+                            <h3>Home Loan Calculator</h3>
+                            <p>A responsive web app built with HTML, CSS, and JavaScript that calculates EMI, total
+                                interest, and total payable amount based on user input. It also features an interactive
+                                column chart (using Highcharts) to visually represent the loan breakdown.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-home-loan.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/Dhamm-HomeLoan" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-6 project overflow-hidden ">
+                        <img src="./images/movieDB.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3>Movie DB</h3>
+                            <p>Built with pure JavaScript, Browse separate pages for Popular, Upcoming, and Top‑Rated
+                                films pulled live from TMDB.Client‑side search lets you find any movie from any page in
+                                real time.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://moviedb-dhamm.netlify.app/#" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/MovieDB" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-4 col-6  project overflow-hidden ">
+                        <img src="./images/ppf.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3>🔢 PPF Calculator</h3>
+                            <p>This PPF calculator simulates how an annual investment grows over time with compound
+                                interest.JavaScript PPF calculator showing yearly opening balance, investment, interest,
+                                and closing balance.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-ppf-calculator.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/PPFCalculator" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-6  project overflow-hidden ">
+                        <img src="./images/temp.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3> Temperature Converter</h3>
+                            <p>A responsive temperature converter built with HTML, CSS, and JavaScript. It converts
+                                Celsius to Fahrenheit and displays the result instantly with a clean UI
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://temperature-to-fahrenheit.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/Temperature-Fahrenheitr"
+                                    target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-6  project overflow-hidden ">
+                        <img src="./images/discount.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3>Discount Calculator r</h3>
+                            <p>responsive discount calculator built with HTML, CSS, and JavaScript. It calculates the
+                                discount amount and final price based on user input, with clean UI and real-time
+                                results.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-discount-calculator.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/DiscountCalculator" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-6  project overflow-hidden ">
+                        <img src="./images/stock.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3>🔢 Stock Average Calculator</h3>
+                            <p>A clean JavaScript tool to calculate average stock price, total units, and total
+                                investment based on user inputs.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-stockaveragecalculator.netlify.app/" target="_blank"
+                                    class="me-2"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/stock-calculator" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
+            <!-- react -->
+            <div class="tab-pane fade" id="nav-react" role="tabpanel" aria-labelledby="nav-react-tab" tabindex="0">
+                <div class="row ">
 
+                    <div class="col-md-4 col-6 project overflow-hidden">
+                        <img src="./images/react-moviedb.png" class="img-fluid border border-danger ">
+                        <div class="layer">
+                            <h3> MovieDB </h3>
+                            <p>Built with React.js — Discover movies, casts, and ratings easily.
+                                Browse separate pages for Popular, Upcoming, and Top‑Rated
+                                films pulled live from TMDB.Client‑side search lets you find any movie from any page in
+                                real time.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://dhamm-react-moviedb.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/ReactMovieDb" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- Buttons -->
-            <div class="project-nav-buttons  btn-group">
-                <button class="prevProject btn-1">Previous</button>
-                <button class="nextProject btn-2">Next</button>
+                    <div class="col-md-4 col-6 project overflow-hidden">
+                        <img src="./images/7up down game.png" class="img-fluid border border-danger ">
+                        <div class="layer">
+                            <h3> 7Up & Down </h3>
+                            <p>This is a fun and simple number guessing game made using React. You have to guess if the
+                                next number will be higher than 7, lower than 7, or exactly 7.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://my-projectss.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/projects" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6 project overflow-hidden ">
+                        <img src="./images/AddExpense.png" class="img-fluid  border border-danger ">
+                        <div class="layer">
+                            <h3>Add Expense</h3>
+                            <p>Easily record your spending and stay on top of your finances.
+                                Add new expense entries by entering the amount, date, payment mode (credit/debit), and
+                                category (e.g., groceries, bills). This form helps you log every transaction for
+                                accurate tracking.
+                            </p>
+                            <div class="d-flex ">
+                                <a href="https://my-projectss.netlify.app/" target="_blank" class="me-2"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                <a href="https://github.com/Dhammashilagaikwad/projects" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <a href="" id="showMoreBtn" class="btn-1 seemore text-center mt-5">See More</a>
+
     </div>
 
     <!-- projects works end -->
@@ -246,10 +759,9 @@
 
 
     <!-- contact start -->
-    <div class="container" id="contact">
-        <div class="row align-items-center">
-            <div
-                class="col-md-4 col-12 d-flex flex-column justify-content-center contact-info wow animate__animated animate__fadeInLeft">
+    <div class="container overflow-x-hidden" id="contact">
+        <div class="row  pt-5 align-items-center">
+            <div class="col-md-4 col-12 contact-info wow animate__animated animate__fadeInRight order-2">
                 <h4><i class="fa-solid fa-phone-volume">
                         <span>+91 9324486349</span>
                     </i></h4>
@@ -260,43 +772,49 @@
                         <span>Mumbai, India </span>
                     </i></h4>
 
-                <div class="mt-3 social-icons">
-                    <a href="https://github.com/" target="_blank" class="pe-3 wow animate__animated animate__fadeInUpBig" data-wow-delay="0.3s">
-                        <i class="fa-brands fa-github"></i>
+                <div class="mt-4 social-icons">
+                    <a href="https://github.com/" target="_blank" class="wow animate__animated animate__fadeInUp"
+                        data-wow-delay="0.3s">
+                        <i class="fab fa-github"></i>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/dhammashila-gaikwad-20250324a/" target="_blank" class="pe-3 wow animate__animated animate__fadeInDownBig" data-wow-delay="0.3s">
-                        <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/dhammashila-gaikwad-20250324a/" target="_blank"
+                        class="wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
 
-                    <a href="https://www.instagram.com/?next=%2F" target="_blank" class="pe-3 wow animate__animated animate__fadeInUpBig" data-wow-delay="0.3s">
-                        <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/?next=%2F" target="_blank"
+                        class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                        <i class="fab fa-instagram"></i>
                     </a>
 
-                    <a href="#" target="_blank" class="pe-3 wow animate__animated animate__fadeInDownBig" data-wow-delay="0.3s">
-                        <i class="fa-brands fa-facebook"></i>
+                    <a href="#" target="_blank" class="wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">
+                        <i class="fab fa-facebook-f"></i>
                     </a>
                 </div>
+
             </div>
 
-            <div class="col-md-8 col-12">
+            <div class="col-md-8 col-12 order-1">
                 <div class="form-section">
-                    <h1 class="headings wow animate__animated animate__heartBeat">Let's Get In Touch</h1>
+                    <h1 class="headings wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">Let's Get
+                        In
+                        Touch</h1>
 
-                    <div class="row g-4">
+                    <div class="row g-4 mt-5 ">
                         <div class="col-md-6 ">
-                            <input type="text" class="form-control inputs " placeholder="First name"
+                            <input type="text" class="form-control inputs rounded-0" placeholder="First name"
                                 aria-label="First name">
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control inputs" placeholder="Last name"
+                            <input type="text" class="form-control inputs rounded-0" placeholder="Last name"
                                 aria-label="Last name">
                         </div>
                         <div class="col-md-6 ">
-                            <input type="email" class="form-control inputs" placeholder="Email:">
+                            <input type="email" class="form-control inputs rounded-0" placeholder="Email:">
                         </div>
                         <div class="col-md-6  ">
-                            <input type="tel" class="form-control inputs" placeholder="Phone:">
+                            <input type="tel" class="form-control inputs rounded-0" placeholder="Phone:">
                         </div>
                         <div class="col-12">
                             <textarea class=" inputs" rows="5" placeholder="Message"></textarea>
@@ -312,6 +830,29 @@
     </div>
     <!-- contact end -->
 
+    <!-- navbaar start -->
+    <nav class="bottom-navbar">
+        <ul>
+            <li><a href="#home" title="Home"><i class="fa fa-house"></i></a></li>
+            <li><a href="#about-me" title="About-me"><i class="fa fa-user"></i></a></li>
+            <li><a href="#skills" title="skills"><i class="fa fa-laptop-code"></i></a></li>
+            <li><a href="#projects" title="projects"><i class="fa fa-briefcase"></i></a></li>
+            <li><a href="#contact" title="contact"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+    </nav>
+    <!-- navbaar end -->
+
+    <!-- horizontal navbar -->
+<!-- <nav class="horixonatl-navbar">
+        <ul>
+            <li><a href="#home" title="Home"><i class="fa fa-house"></i></a></li>
+            <li><a href="#about-me" title="About-me"><i class="fa fa-user"></i></a></li>
+            <li><a href="#skills" title="skills"><i class="fa fa-laptop-code"></i></a></li>
+            <li><a href="#projects" title="projects"><i class="fa fa-briefcase"></i></a></li>
+            <li><a href="#contact" title="contact"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+    </nav> -->
+     <!-- horizontal navbar -->
 
 
     <!-- footer start -->
@@ -320,14 +861,18 @@
             <path d="M-100 0C-100 0 218.416 55.835 693.5 55.835C1168.58 55.835 1487 0 1487 0V79H-100V0Z"></path>
         </svg>
     </div>
-    <div class="container-fluid footer">
-        <footer class="sub-footer py-3 my-4">
+    <div class="container-fluid footer ">
+        <footer class="sub-footer py-3 my-4 ">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s"><a href="#home" class="nav-link px-2 text-white">Home</a></li>
-                <li class="nav-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s"><a href="#about-me" class="nav-link px-2 text-white">Aboute Me</a></li>
+                <li class="nav-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s"><a href="#home"
+                        class="nav-link px-2 text-white">Home</a></li>
+                <li class="nav-item wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s"><a href="#about-me"
+                        class="nav-link px-2 text-white">Aboute Me</a></li>
                 <li class="nav-item "><a href="#skills" class="nav-link px-2 text-white">Skills</a></li>
-                <li class="nav-item wow animate__animated animate__fadeInRight" data-wow-delay="0.3s"><a href="#projects" class="nav-link px-2 text-white">Projects</a></li>
-                <li class="nav-item wow animate__animated animate__fadeInRight" data-wow-delay="0.3s"><a href="#contact" class="nav-link px-2 text-white">Contact</a></li>
+                <li class="nav-item wow animate__animated animate__fadeInRight" data-wow-delay="0.3s"><a
+                        href="#projects" class="nav-link px-2 text-white">Projects</a></li>
+                <li class="nav-item wow animate__animated animate__fadeInRight" data-wow-delay="0.3s"><a href="#contact"
+                        class="nav-link px-2 text-white">Contact</a></li>
             </ul>
             <p class="text-center text-white">© 2025 dhammashila. All rights reserved</p>
         </footer>
@@ -336,18 +881,18 @@
     <!-- footer end -->
 
 
-    <!-- Fixed Bottom Navbar Start -->
-    <nav class="bottom-navbar">
-        <ul>
-            <li><a href="#home"><i class="fa fa-house"></i></a></li>
-            <li><a href="#about-me"><i class="fa fa-user"></i></a></li>
-            <li><a href="#skills"><i class="fa fa-laptop-code"></i></a></li>
-            <li><a href="#projects"><i class="fa fa-briefcase"></i></a></li>
-            <li><a href="#contact"><i class="fa fa-envelope"></i></a></li>
-        </ul>
-    </nav>
+    <!-- contact -->
+    <div class="contact-wrapper">
+        <a href="#contact" class="contact-float-btn">
+            <i class="fa-solid fa-phone-volume"></i> Contact
+        </a>
+        <div class="contact-info-tooltip">
+            📧 dhammashila025@gmail.com<br />
+            📞 +91 9324486349
+        </div>
+    </div>
+    <!-- contact -->
 
-    <!-- Fixed Bottom Navbar End -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
         integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
