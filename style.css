@@ -329,12 +329,9 @@
   height: 15px;
   border-radius: 50%;
   background: #28d160;
-  /* green dot */
   border: 2px solid #fff;
-  /* white ring so it pops on any bg */
   bottom: 10%;
-  /* distance from bottom/right edges */
-  right: 45px;
+  right: 30px;
   animation: onlinePulse 2s ease-out infinite;
 }
 
