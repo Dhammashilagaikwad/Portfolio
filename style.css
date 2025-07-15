@@ -1245,6 +1245,9 @@ textarea.inputs {
   height: 30px;
 }
 
+.project:hover .layer {
+  height: 90%;
+}
 }
 
 /* --bs-nav-link-padding-x: 1rem;
